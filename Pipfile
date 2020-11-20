@@ -15,6 +15,9 @@ python_version = "3.6"
 "psycopg2-binary" = "*"
 django-heroku = "*"
 gunicorn = "*"
+djangorestframework = "*"
+django = "*"
+django-cors-headers = "*"
 
 
 [dev-packages]
