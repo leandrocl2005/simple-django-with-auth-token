@@ -8,7 +8,7 @@
 - Em **settings.py**:
 ```python
 INSTALLED_APPS = [
-    '...',
+    ...,
     'rest_framework',
     'core',
 ]
@@ -49,7 +49,7 @@ class HelloView(APIView):
 - Em **settings.py**:
 ```python
 INSTALLED_APPS = [
-    '...',
+    ...,
     'rest_framework.authtoken',
 ]
 
@@ -82,3 +82,25 @@ urlpatterns = [
     "password": "123456"
 }
 ```
+- > pip install django-cors-headers
+- Em **settings.py**:
+```python
+INSTALLED_APPS = [
+    ...,
+    'corsheaders',
+]
+
+MIDDLEWARE_CLASSES = [
+    ...
+    'corsheaders.middleware.CorsMiddleware',  
+    'django.middleware.common.CommonMiddleware',
+]
+
+CORS_ORIGIN_ALLOW_ALL = True
+```
+
+# Deploy Pythonanywhere
+- > git clone https://github.com/leandrocl2005/simple-django-with-auth-token.git
+- > mkvirtualenv --python=/usr/bin/python3.6 myvenv
+- > pip install django
+- > pip install djangorestframework
