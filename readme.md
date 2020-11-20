@@ -99,8 +99,4 @@ MIDDLEWARE_CLASSES = [
 CORS_ORIGIN_ALLOW_ALL = True
 ```
 
-# Deploy Pythonanywhere
-- > git clone https://github.com/leandrocl2005/simple-django-with-auth-token.git
-- > mkvirtualenv --python=/usr/bin/python3.6 myvenv
-- > pip install django
-- > pip install djangorestframework
+# Deploy Heroku
